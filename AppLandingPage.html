@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>My Awesome App</title>
+
+    <style type="text/css">
+        #jumbotron {
+            background-image: url(bg-2.jpg);
+            text-align: center;
+            padding: 150px;
+            margin-top: 50px;
+        }
+
+        #appSummary {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #inlineFormInputGroupUsername {
+            width: 300px;
+        }
+
+        #app-store-icon {
+            width: 200px;
+        }
+
+        #footer {
+            background-color: rgb(43, 156, 156);
+            padding-top: 50px;
+            margin-top: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        body {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="150">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#jumbotron">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">DownloadTheApp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="d-flex container">
+            <input class="form-control me-2" type="login" placeholder="Email" aria-label="email">
+            <input class="form-control me-2" type="password" placeholder="Password" aria-label="password">
+            <button class="btn btn-success" type="login">Login</button>
+        </form>
+    </nav>
+
+    <div id="jumbotron" class="jumbotron">
+        <h1 class="display-3">My Awesome App</h1>
+        <p class="lead">This is why YOU should download this fantastic app!</p>
+        <hr class="my-4">
+        <p>Want to know more? Join our mailing list!</p>
+        <form class="row row-cols-lg-auto g-3 align-items-center" id="form">
+            <div class="col-12">
+                <label class="visually-hidden" for="inlineFormInputGroupUsername">Your Email</label>
+                <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="col-auto" id="sign-up">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container p-4" id="appSummary">
+        <div class="row">
+            <h1>Why This App is Awesome</h1>
+            <p>Summary, once again of your app's awesomeness</p>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bird.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><img
+                                src="https://img.icons8.com/ios-glyphs/30/000000/facetime.png" /></i> title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bird.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><img src="https://img.icons8.com/ios-glyphs/30/000000/itunes.png" /> Card
+                            title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bird.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><img
+                                src="https://img.icons8.com/material-rounded/24/000000/user-female.png" /> Card
+                            title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="row">
+            <h2> Download the app!</h2>
+            <p class="lead">Really, why should I download this app??</p>
+            <p>
+                <a href=""><img id="app-store-icon" src="appstore.jpg"></a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
